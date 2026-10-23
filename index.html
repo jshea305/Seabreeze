@@ -244,78 +244,27 @@
         </a>
     </div>
 
-    <!-- Frontend JSON Loader & Interactive Script -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        document.getElementById('menu-toggle').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
+  <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-brand-surface py-12 px-4 text-center text-xs text-brand-muted">
+        <div class="max-w-7xl mx-auto space-y-3">
+            <div class="font-heading font-black text-white text-sm uppercase">Seabreeze Landscape Construction</div>
+            <div>&copy; <span id="year"></span> All rights reserved. Serving Rhode Island.</div>
+        </div>
+    </footer>
 
-        // Load content dynamically from data/content.json
-        document.addEventListener('DOMContentLoaded', async () => {
-            try {
-                const response = await fetch('./data/content.json');
-                const data = await response.json();
-                
-                // Populate Company info
-                document.getElementById('header-phone-text').textContent = data.company.phone;
-                document.getElementById('header-phone-link').href = `tel:${data.company.phoneClean}`;
-                document.getElementById('mobile-phone-text').textContent = `Call/Text ${data.company.phone}`;
-                document.getElementById('mobile-phone-link').href = `tel:${data.company.phoneClean}`;
-                document.getElementById('sticky-phone-link').href = `tel:${data.company.phoneClean}`;
-                document.getElementById('sticky-sms-link').href = `sms:${data.company.phoneClean}`;
-                document.getElementById('hero-text-link').href = `sms:${data.company.phoneClean}`;
+    <!-- Mobile Sticky Call Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-brand-dark/95 border-t border-brand-surface p-3 sm:hidden grid grid-cols-2 gap-3 backdrop-blur-lg">
+        <a id="sticky-phone-link" href="tel:4018292058" class="bg-brand-surface border border-brand-gold/40 text-brand-gold font-extrabold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+        <a id="sticky-sms-link" href="sms:4018292058" class="bg-brand-accent text-white font-extrabold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
+            <i class="fa-solid fa-comment"></i> Text Quote
+        </a>
+    </div>
 
-                // Populate Services Grid
-                const grid = document.getElementById('services-grid');
-                grid.innerHTML = data.services.map(service => `
-                    <div class="bg-brand-card border border-brand-surface rounded-2xl p-6 hover:border-brand-gold/50 transition-all">
-                        <div class="w-14 h-14 rounded-xl bg-brand-surface border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-5">
-                            <i class="fa-solid ${service.icon}"></i>
-                        </div>
-                        <h3 class="text-xl font-heading font-bold text-white mb-2">${service.title}</h3>
-                        <p class="text-brand-muted text-sm leading-relaxed mb-4">${service.description}</p>
-                    </div>
-                `).join('');
-
-            } catch (err) {
-                console.error("Could not load content.json:", err);
-            }
-        });
-
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            document.getElementById('lead-form').classList.add('hidden');
-            document.getElementById('form-success').classList.remove('hidden');
-        }
-
-        // Before / After Slider Logic
-        const slider = document.getElementById('ba-slider');
-        const afterLayer = document.getElementById('ba-after-layer');
-        const handle = document.getElementById('ba-handle');
-        const afterImg = document.getElementById('ba-after-img');
-        let isDragging = false;
-
-        function updateSlider(x) {
-            const rect = slider.getBoundingClientRect();
-            let pos = x - rect.left;
-            if (pos < 0) pos = 0;
-            if (pos > rect.width) pos = rect.width;
-            const pct = (pos / rect.width) * 100;
-            afterLayer.style.width = pct + '%';
-            handle.style.left = pct + '%';
-            afterImg.style.width = rect.width + 'px';
-        }
-
-        window.addEventListener('load', () => { afterImg.style.width = slider.getBoundingClientRect().width + 'px'; });
-        window.addEventListener('resize', () => { afterImg.style.width = slider.getBoundingClientRect().width + 'px'; });
-
-        slider.addEventListener('mousedown', (e) => { isDragging = true; updateSlider(e.clientX); });
-        window.addEventListener('mouseup', () => { isDragging = false; });
-        window.addEventListener('mousemove', (e) => { if (isDragging) updateSlider(e.clientX); });
-        slider.addEventListener('touchstart', (e) => { isDragging = true; updateSlider(e.touches[0].clientX); });
-        window.addEventListener('touchend', () => { isDragging = false; });
-        window.addEventListener('touchmove', (e) => { if (isDragging) updateSlider(e.touches[0].clientX); });
-    </script>
+    <!-- External JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>
 </body>
 </html>
