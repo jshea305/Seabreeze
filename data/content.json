@@ -1,1 +1,76 @@
-
+{
+  "company": {
+    "name": "Seabreeze Landscape Construction",
+    "tagline": "From Site Works to Finished Landscapes",
+    "phone": "(401) 829-2058",
+    "phoneClean": "4018292058",
+    "location": "North Kingstown, Rhode Island",
+    "serviceArea": "Serving All of Rhode Island & Surrounding Areas"
+  },
+  "announcement": {
+    "badge": "Big News",
+    "text": "Seabreeze Lawncare is now Seabreeze Landscape Construction! Same local team, bigger capabilities."
+  },
+  "services": [
+    {
+      "id": "excavation",
+      "icon": "fa-tractor",
+      "title": "Site Work & Excavation",
+      "description": "Precision grading, trenching, foundation prep, and lot clearing using commercial machinery. Built to prepare your site right.",
+      "bullets": [
+        "Foundation & Trench Excavation",
+        "Precision Rough & Finish Grading"
+      ]
+    },
+    {
+      "id": "patios",
+      "icon": "fa-cubes",
+      "title": "Patios & Walkways",
+      "description": "Custom paver patio installations, natural stone walkways, steps, and outdoor living spaces tailored for durability and curb appeal.",
+      "bullets": [
+        "Interlocking Pavers & Flagstone",
+        "Outdoor Fireplace Integration"
+      ]
+    },
+    {
+      "id": "retaining-walls",
+      "icon": "fa-layer-group",
+      "title": "Retaining Walls & Hardscaping",
+      "description": "Engineered block walls, boulder retaining structures, and terraced gardens designed for erosion control and structural strength.",
+      "bullets": [
+        "Structural & Decorative Retaining Walls",
+        "Slope Stabilization Solutions"
+      ]
+    },
+    {
+      "id": "drainage",
+      "icon": "fa-water",
+      "title": "Drainage Solutions",
+      "description": "Protect your property from water pooling and foundation damage with French drains, dry wells, pop-up emitters, and water redirection.",
+      "bullets": [
+        "French Drain & Catch Basin Systems",
+        "Downspout Piped Discharge"
+      ]
+    },
+    {
+      "id": "clearing",
+      "icon": "fa-tree",
+      "title": "Land Clearing & Stump Removal",
+      "description": "Overgrown lot clearing, brush removal, stump grinding, and gravel driveway prep to prepare space for future construction.",
+      "bullets": [
+        "Full Brush & Overgrowth Removal",
+        "Gravel & Stone Driveway Installation"
+      ]
+    },
+    {
+      "id": "lawn",
+      "icon": "fa-seedling",
+      "title": "Lawn Renovations & Maintenance",
+      "description": "Complete lawn re-seeding, sod installation, hydroseeding, garden bed installs, lighting, and seasonal grounds maintenance.",
+      "bullets": [
+        "Hydroseeding & Fresh Sod Installation",
+        "Low-Voltage Landscape Lighting"
+      ]
+    }
+  ]
+}
