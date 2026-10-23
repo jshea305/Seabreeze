@@ -1,1 +1,44 @@
+/* Custom image comparison slider styles & typography overrides */
+.ba-container {
+position: relative;
+overflow: hidden;
+border-radius: 0.75rem;
+user-select: none;
+}
 
+.ba-after {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+width: 50%;
+overflow: hidden;
+}
+
+.ba-handle {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 50%;
+width: 4px;
+background: #D4AF37;
+cursor: ew-resize;
+transform: translateX(-50%);
+z-index: 20;
+}
+
+.ba-handle-button {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: #D4AF37;
+color: #111820;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
