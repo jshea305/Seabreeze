@@ -1,1 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews & Testimonials | Seabreeze Landscape Construction</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#111820',
+                            card: '#1A232A',
+                            surface: '#232D36',
+                            accent: '#2E7D32',
+                            accentHover: '#256628',
+                            gold: '#D4AF37',
+                            goldHover: '#B89628',
+                            lightText: '#E2E8F0',
+                            muted: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .google-blue { color: #4285F4; }
+        .google-red { color: #EA4335; }
+        .google-yellow { color: #FBBC05; }
+        .google-green { color: #34A853; }
+    </style>
+</head>
+<body class="bg-brand-dark text-brand-lightText font-sans antialiased pb-20 md:pb-0">
 
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-accent via-emerald-800 to-brand-accent text-white py-2.5 px-4 text-center text-xs md:text-sm font-medium shadow-md relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2">
+            <span class="bg-brand-gold text-brand-dark px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">5-Star Rated</span>
+            <span><strong>Seabreeze Landscape Construction</strong> — See what local Rhode Island homeowners are saying!</span>
+            <a href="index.html#estimate" class="underline hover:text-brand-gold transition-colors ml-1">Get Free Estimate &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-surface/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="bg-brand-surface p-2.5 rounded-lg border border-brand-gold/30 group-hover:border-brand-gold transition-all">
+                    <i class="fa-solid font-black fa-dumpster-fire text-brand-gold text-2xl"></i>
+                </div>
+                <div>
+                    <div class="font-heading font-black text-lg md:text-xl tracking-tight text-white uppercase flex items-center gap-1">
+                        SEABREEZE <span class="text-brand-gold">.</span>
+                    </div>
+                    <div class="text-[10px] sm:text-xs font-semibold tracking-wider text-brand-muted uppercase">Landscape Construction</div>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-brand-lightText">
+                <a href="index.html" class="hover:text-brand-gold transition-colors"><i class="fa-solid fa-arrow-left text-xs mr-1"></i> Back to Main Site</a>
+                <a href="index.html#services" class="hover:text-brand-gold transition-colors">Services</a>
+                <a href="index.html#projects" class="hover:text-brand-gold transition-colors">Before & After</a>
+                <a href="reviews.html" class="text-brand-gold font-bold border-b-2 border-brand-gold pb-1">Reviews</a>
+                <a href="index.html#estimate" class="hover:text-brand-gold transition-colors">Free Estimate</a>
+            </nav>
+
+            <!-- Call/Text CTA -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:4018292058" class="flex items-center gap-2 bg-brand-surface hover:bg-brand-surface/80 border border-brand-gold/40 text-brand-gold px-4 py-2.5 rounded-lg font-bold text-sm transition-all shadow-sm">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    <span>(401) 829-2058</span>
+                </a>
+                <a href="index.html#estimate" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-md">
+                    Get Free Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="lg:hidden p-2 text-brand-lightText hover:text-brand-gold focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-card border-b border-brand-surface px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50"><i class="fa-solid fa-arrow-left text-xs mr-1"></i> Return to Home</a>
+            <a href="index.html#services" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Services</a>
+            <a href="index.html#projects" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Before & After</a>
+            <a href="reviews.html" class="block py-2 text-brand-gold font-bold border-b border-brand-surface/50">Customer Reviews</a>
+            <a href="index.html#estimate" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Free Estimate Form</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:4018292058" class="flex items-center justify-center gap-2 bg-brand-surface text-brand-gold border border-brand-gold/40 py-3 rounded-lg font-bold text-center">
+                    <i class="fa-solid fa-phone"></i> Call/Text (401) 829-2058
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 md:py-20 bg-cover bg-center border-b border-brand-surface" style="background-image: linear-gradient(to bottom, rgba(17, 24, 32, 0.90), rgba(17, 24, 32, 0.98)), url('https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&w=1600&q=80');">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+            <div class="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 text-brand-gold px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-shield-halved"></i> Verified Customer Testimonials
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl font-heading font-extrabold text-white uppercase leading-tight">
+                Trusted Across <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-200">Rhode Island</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-brand-muted max-w-2xl mx-auto">
+                Read authentic Google reviews from homeowners and property owners in North Kingstown and surrounding RI towns who trusted John Owens and the Seabreeze crew with their site work and hardscaping.
+            </p>
+
+            <!-- Google Overall Badge Block -->
+            <div class="inline-flex flex-col sm:flex-row items-center gap-4 bg-brand-card/90 border border-brand-gold/40 p-5 rounded-2xl shadow-2xl backdrop-blur-md mt-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-2xl shadow-inner">
+                        <i class="fa-brands fa-google google-blue"></i>
+                    </div>
+                    <div class="text-left">
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-2xl font-black text-white">5.0</span>
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="text-xs text-brand-muted font-medium">Verified Local Google Reviews</span>
+                    </div>
+                </div>
+                <div class="h-8 w-px bg-brand-surface hidden sm:block"></div>
+                <a href="index.html#estimate" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all shadow-md">
+                    Request Estimate
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Grid Section -->
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+            <h2 class="text-xs font-bold text-brand-gold uppercase tracking-widest">Real Results</h2>
+            <h3 class="text-2xl sm:text-4xl font-heading font-extrabold text-white uppercase">What Our Clients Say</h3>
+            <p class="text-brand-muted text-sm">Here is what real customers have posted publicly on our Google profile.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Review 1: Rob Carter (Recent) -->
+            <div class="bg-brand-card border border-brand-surface rounded-2xl p-6 shadow-xl flex flex-col justify-between hover:border-brand-gold/40 transition-all">
+                <div class="space-y-4">
+                    <div class="flex items-start justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-purple-700 text-white font-bold flex items-center justify-center text-lg shadow-md relative">
+                                R
+                                <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-amber-500 text-brand-dark rounded-full flex items-center justify-center text-[9px]">
+                                    <i class="fa-solid fa-award"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base leading-snug">Rob Carter</h4>
+                                <div class="text-xs text-brand-muted">Local Guide • 15 reviews</div>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-brand-muted text-lg"></i>
+                    </div>
+
+                    <div class="flex items-center gap-2 text-xs">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-brand-muted">• 5 months ago</span>
+                    </div>
+
+                    <p class="text-sm text-brand-lightText leading-relaxed">
+                        "John and his crew do an outstanding job. Johns qoutes are very reasonable and detailed. Seabreeze installed out new lawn and gravel parking area last year. This year they came back and performed a Spring Cleanup and planted some perrinals in our garden. My wife and I are impressed with Seabreeze and would highly recommend them."
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-brand-surface/60 mt-6 flex items-center gap-2 text-xs text-brand-muted">
+                    <i class="fa-solid fa-heart text-rose-500"></i>
+                    <span>Helpful local review</span>
+                </div>
+            </div>
+
+            <!-- Review 2: Patrick Murray -->
+            <div class="bg-brand-card border border-brand-surface rounded-2xl p-6 shadow-xl flex flex-col justify-between hover:border-brand-gold/40 transition-all">
+                <div class="space-y-4">
+                    <div class="flex items-start justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-lg shadow-md relative">
+                                P
+                                <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-amber-500 text-brand-dark rounded-full flex items-center justify-center text-[9px]">
+                                    <i class="fa-solid fa-award"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base leading-snug">Patrick Murray</h4>
+                                <div class="text-xs text-brand-muted">Local Guide • 25 reviews • 4 photos</div>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-brand-muted text-lg"></i>
+                    </div>
+
+                    <div class="flex items-center gap-2 text-xs">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-brand-muted">• 5 months ago</span>
+                    </div>
+
+                    <p class="text-sm text-brand-lightText leading-relaxed">
+                        "Seabreeze did a fantastic job cleaning up our yard and garden beds. Everything looked great after they were done."
+                    </p>
+
+                    <!-- Owner Response -->
+                    <div class="bg-brand-surface border-l-2 border-brand-gold p-3.5 rounded-r-xl space-y-1.5 mt-3">
+                        <div class="text-xs font-bold text-brand-gold flex items-center gap-1.5">
+                            <i class="fa-solid fa-reply text-xs"></i> Seabreeze Lawncare (Owner)
+                        </div>
+                        <p class="text-xs text-brand-muted leading-snug">
+                            "Thank you for trusting us to get the work done!"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-brand-surface/60 mt-6 flex items-center gap-2 text-xs text-brand-muted">
+                    <i class="fa-solid fa-thumbs-up text-brand-gold"></i>
+                    <span>Verified Google User</span>
+                </div>
+            </div>
+
+            <!-- Review 3: Stephen Silva -->
+            <div class="bg-brand-card border border-brand-surface rounded-2xl p-6 shadow-xl flex flex-col justify-between hover:border-brand-gold/40 transition-all">
+                <div class="space-y-4">
+                    <div class="flex items-start justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-slate-600 text-white font-bold flex items-center justify-center text-lg shadow-md">
+                                S
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base leading-snug">Stephen Silva</h4>
+                                <div class="text-xs text-brand-muted">6 reviews</div>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-brand-muted text-lg"></i>
+                    </div>
+
+                    <div class="flex items-center gap-2 text-xs">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-brand-muted">• 8 months ago</span>
+                    </div>
+
+                    <p class="text-sm text-brand-lightText leading-relaxed">
+                        "Huge shout-out to John Owens from Sea Breeze for revamping both the front and back yard and laying down crushed asphalt. Awesome work from start to finish — couldn’t be happier with the results"
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-brand-surface/60 mt-6 flex items-center gap-2 text-xs text-brand-muted">
+                    <i class="fa-solid fa-road text-brand-gold"></i>
+                    <span>Yard Revamp & Asphalt Work</span>
+                </div>
+            </div>
+
+            <!-- Review 4: Rob Carter (Earlier Review) -->
+            <div class="bg-brand-card border border-brand-surface rounded-2xl p-6 shadow-xl flex flex-col justify-between hover:border-brand-gold/40 transition-all">
+                <div class="space-y-4">
+                    <div class="flex items-start justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-amber-700 text-white font-bold flex items-center justify-center text-lg shadow-md">
+                                R
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base leading-snug">Rob Carter</h4>
+                                <div class="text-xs text-brand-muted">Local Guide • 10 reviews</div>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-brand-muted text-lg"></i>
+                    </div>
+
+                    <div class="flex items-center gap-2 text-xs">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-brand-muted">• a year ago</span>
+                    </div>
+
+                    <p class="text-sm text-brand-lightText leading-relaxed">
+                        "If you are looking for an outstanding landscaping or lawncare business, Seabreeze Lawncare is the one for you. John Owens and his crew are well organized; willing to work with any situation; and are very professional."
+                    </p>
+
+                    <!-- Owner Response -->
+                    <div class="bg-brand-surface border-l-2 border-brand-gold p-3.5 rounded-r-xl space-y-1.5 mt-3">
+                        <div class="text-xs font-bold text-brand-gold flex items-center gap-1.5">
+                            <i class="fa-solid fa-reply text-xs"></i> Seabreeze Lawncare (Owner)
+                        </div>
+                        <p class="text-xs text-brand-muted leading-snug">
+                            "Thank you Mr and Mrs Carter, it was a pleasure working with you guys!"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-brand-surface/60 mt-6 flex items-center gap-2 text-xs text-brand-muted">
+                    <i class="fa-solid fa-user-check text-brand-gold"></i>
+                    <span>Repeat Client</span>
+                </div>
+            </div>
+
+            <!-- Review 5: Missy -->
+            <div class="bg-brand-card border border-brand-surface rounded-2xl p-6 shadow-xl flex flex-col justify-between hover:border-brand-gold/40 transition-all">
+                <div class="space-y-4">
+                    <div class="flex items-start justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-blue-700 text-white font-bold flex items-center justify-center text-lg shadow-md relative">
+                                M
+                                <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-amber-500 text-brand-dark rounded-full flex items-center justify-center text-[9px]">
+                                    <i class="fa-solid fa-award"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base leading-snug">Missy</h4>
+                                <div class="text-xs text-brand-muted">Local Guide • 27 reviews • 3 photos</div>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-brand-muted text-lg"></i>
+                    </div>
+
+                    <div class="flex items-center gap-2 text-xs">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-brand-muted">• 3 years ago</span>
+                    </div>
+
+                    <p class="text-sm text-brand-lightText leading-relaxed">
+                        "The crew did a fantastic and quick job."
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-brand-surface/60 mt-6 flex items-center gap-2 text-xs text-brand-muted">
+                    <i class="fa-solid fa-bolt text-brand-gold"></i>
+                    <span>Fast & Reliable Execution</span>
+                </div>
+            </div>
+
+            <!-- Review 6: Rachel -->
+            <div class="bg-brand-card border border-brand-surface rounded-2xl p-6 shadow-xl flex flex-col justify-between hover:border-brand-gold/40 transition-all">
+                <div class="space-y-4">
+                    <div class="flex items-start justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-lg shadow-md">
+                                R
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base leading-snug">Rachel</h4>
+                                <div class="text-xs text-brand-muted">3 reviews</div>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-brand-muted text-lg"></i>
+                    </div>
+
+                    <div class="flex items-center gap-2 text-xs">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-brand-muted">• 3 years ago</span>
+                    </div>
+
+                    <div class="bg-brand-surface/80 p-3.5 rounded-xl space-y-2 border border-brand-surface">
+                        <div class="text-xs font-bold text-brand-gold uppercase tracking-wider">Positive Highlights</div>
+                        <p class="text-xs text-brand-lightText">
+                            Responsiveness, Punctuality, Quality, Professionalism
+                        </p>
+                        <div class="text-xs font-bold text-brand-gold uppercase tracking-wider pt-1">Services Provided</div>
+                        <p class="text-xs text-brand-muted">
+                            Weed control, Yard work, Service not listed
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-brand-surface/60 mt-6 flex items-center gap-2 text-xs text-brand-muted">
+                    <i class="fa-solid fa-circle-check text-brand-accent"></i>
+                    <span>5-Star Rated Service</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="py-16 px-4 max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-brand-card to-brand-surface border border-brand-gold/40 rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden">
+            <div class="max-w-xl mx-auto space-y-3">
+                <span class="bg-brand-gold/10 text-brand-gold px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Get Started Today</span>
+                <h3 class="text-2xl sm:text-4xl font-heading font-extrabold text-white uppercase">Ready For Your Project Quote?</h3>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                    Join dozens of satisfied Rhode Island property owners. Fast quotes with zero friction.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+                <a href="index.html#estimate" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-xl font-bold text-base transition-all shadow-lg flex items-center justify-center gap-2">
+                    <span>Request Free Fast Estimate</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="tel:4018292058" class="w-full sm:w-auto bg-brand-surface hover:bg-brand-surface/80 border border-brand-gold/40 text-brand-gold px-8 py-4 rounded-xl font-bold text-base transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call (401) 829-2058</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-brand-surface py-12 px-4 text-center text-xs text-brand-muted">
+        <div class="max-w-7xl mx-auto space-y-3">
+            <div class="font-heading font-black text-white text-sm uppercase">Seabreeze Landscape Construction</div>
+            <div>North Kingstown, Rhode Island • Phone: (401) 829-2058</div>
+            <div>&copy; <span id="year"></span> All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Call Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-brand-dark/95 border-t border-brand-surface p-3 sm:hidden grid grid-cols-2 gap-3 backdrop-blur-lg">
+        <a href="tel:4018292058" class="bg-brand-surface border border-brand-gold/40 text-brand-gold font-extrabold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+        <a href="sms:4018292058" class="bg-brand-accent text-white font-extrabold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
+            <i class="fa-solid fa-comment"></i> Text Quote
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
