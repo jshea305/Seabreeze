@@ -1,308 +1,321 @@
-<!-- Custom Stylesheet -->
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seabreeze Landscape Construction | Rhode Island Hardscaping & Site Work</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    brand: {
-                        dark: '#111820',
-                        card: '#1A232A',
-                        surface: '#232D36',
-                        accent: '#2E7D32',
-                        accentHover: '#256628',
-                        gold: '#D4AF37',
-                        goldHover: '#B89628',
-                        lightText: '#E2E8F0',
-                        muted: '#94A3B8'
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#111820',
+                            card: '#1A232A',
+                            surface: '#232D36',
+                            accent: '#2E7D32',
+                            accentHover: '#256628',
+                            gold: '#D4AF37',
+                            goldHover: '#B89628',
+                            lightText: '#E2E8F0',
+                            muted: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
                     }
-                },
-                fontFamily: {
-                    sans: ['Inter', 'sans-serif'],
-                    heading: ['Montserrat', 'sans-serif'],
                 }
             }
         }
-    }
-</script>
+    </script>
+</head>
+<body class="bg-brand-dark text-brand-lightText font-sans antialiased pb-20 md:pb-0">
 
-
-<!-- Rebrand Notice Bar -->
-<div class="bg-gradient-to-r from-brand-accent via-emerald-800 to-brand-accent text-white py-2.5 px-4 text-center text-xs md:text-sm font-medium shadow-md relative z-50">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2">
-        <span class="bg-brand-gold text-brand-dark px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">Big News</span>
-        <span id="announcement-text"><strong>Seabreeze Lawncare</strong> is now <strong>Seabreeze Landscape Construction</strong>! Same local team, bigger capabilities.</span>
-        <a href="#services" class="underline hover:text-brand-gold transition-colors ml-1">Explore New Services &rarr;</a>
+    <!-- Rebrand Notice Bar -->
+    <div class="bg-gradient-to-r from-brand-accent via-emerald-800 to-brand-accent text-white py-2.5 px-4 text-center text-xs md:text-sm font-medium shadow-md relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2">
+            <span class="bg-brand-gold text-brand-dark px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">Big News</span>
+            <span id="announcement-text"><strong>Seabreeze Lawncare</strong> is now <strong>Seabreeze Landscape Construction</strong>! Same local team, bigger capabilities.</span>
+            <a href="#services" class="underline hover:text-brand-gold transition-colors ml-1">Explore New Services &rarr;</a>
+        </div>
     </div>
-</div>
 
-<!-- Header Navigation -->
-<header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-surface/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <a href="#" class="flex items-center gap-3 group">
-            <div class="bg-brand-surface p-2.5 rounded-lg border border-brand-gold/30 group-hover:border-brand-gold transition-all">
-                <i class="fa-solid font-black fa-dumpster-fire text-brand-gold text-2xl"></i>
-            </div>
-            <div>
-                <div id="brand-title" class="font-heading font-black text-lg md:text-xl tracking-tight text-white uppercase flex items-center gap-1">
-                    SEABREEZE <span class="text-brand-gold">.</span>
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-surface/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="bg-brand-surface p-2.5 rounded-lg border border-brand-gold/30 group-hover:border-brand-gold transition-all">
+                    <i class="fa-solid font-black fa-dumpster-fire text-brand-gold text-2xl"></i>
                 </div>
-                <div id="brand-subtitle" class="text-[10px] sm:text-xs font-semibold tracking-wider text-brand-muted uppercase">Landscape Construction</div>
-            </div>
-        </a>
-
-        <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-brand-lightText">
-            <a href="#services" class="hover:text-brand-gold transition-colors">Services</a>
-            <a href="#projects" class="hover:text-brand-gold transition-colors">Before & After</a>
-            <a href="#why-us" class="hover:text-brand-gold transition-colors">Why Choose Us</a>
-            <a href="#estimate" class="hover:text-brand-gold transition-colors">Free Estimate</a>
-        </nav>
-
-        <div class="hidden sm:flex items-center gap-3">
-            <a id="header-phone-link" href="tel:4018292058" class="flex items-center gap-2 bg-brand-surface hover:bg-brand-surface/80 border border-brand-gold/40 text-brand-gold px-4 py-2.5 rounded-lg font-bold text-sm transition-all shadow-sm">
-                <i class="fa-solid fa-phone text-xs"></i>
-                <span id="header-phone-text">(401) 829-2058</span>
-            </a>
-            <a href="#estimate" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-md">
-                Get Free Quote
-            </a>
-        </div>
-
-        <button id="menu-toggle" class="lg:hidden p-2 text-brand-lightText hover:text-brand-gold focus:outline-none">
-            <i class="fa-solid fa-bars text-2xl"></i>
-        </button>
-    </div>
-
-    <div id="mobile-menu" class="hidden lg:hidden bg-brand-card border-b border-brand-surface px-4 pt-2 pb-6 space-y-3">
-        <a href="#services" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Services</a>
-        <a href="#projects" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Before & After Showcase</a>
-        <a href="#why-us" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Why Choose Us</a>
-        <a href="#estimate" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Fast Estimate Form</a>
-        <div class="pt-2 flex flex-col gap-2">
-            <a id="mobile-phone-link" href="tel:4018292058" class="flex items-center justify-center gap-2 bg-brand-surface text-brand-gold border border-brand-gold/40 py-3 rounded-lg font-bold text-center">
-                <i class="fa-solid fa-phone"></i> <span id="mobile-phone-text">Call/Text (401) 829-2058</span>
-            </a>
-        </div>
-    </div>
-</header>
-
-<!-- Hero Section -->
-<section class="relative min-h-[580px] md:min-h-[640px] flex items-center justify-center bg-cover bg-center py-20 px-4" style="background-image: linear-gradient(to bottom, rgba(17, 24, 32, 0.85), rgba(17, 24, 32, 0.95)), url('https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=1600&q=80');">
-    <div class="max-w-5xl mx-auto text-center space-y-6 relative z-10">
-        <div id="hero-badge" class="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 text-brand-gold px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
-            <i class="fa-solid fa-map-pin"></i> Serving All of Rhode Island & Surrounding Areas
-        </div>
-        
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight uppercase">
-            From Site Works to <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-200">Finished Landscapes</span>
-        </h1>
-        
-        <p class="text-base sm:text-lg md:text-xl text-brand-muted max-w-3xl mx-auto font-normal leading-relaxed">
-            Specializing in excavation, paver patios, retaining walls, land clearing, and comprehensive drainage solutions across Rhode Island.
-        </p>
-
-        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none">
-            <a href="#estimate" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-xl font-bold text-base transition-all shadow-lg flex items-center justify-center gap-3 group">
-                <span>Request Free Fast Estimate</span>
-                <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-            </a>
-            <a id="hero-text-link" href="sms:4018292058" class="w-full sm:w-auto bg-brand-surface hover:bg-brand-surface/80 border border-slate-600 text-white px-8 py-4 rounded-xl font-bold text-base transition-all flex items-center justify-center gap-3">
-                <i class="fa-solid fa-comment-dots text-brand-gold"></i>
-                <span>Text Us for Quick Quote</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Services Grid Section -->
-<section id="services" class="py-20 px-4 max-w-7xl mx-auto">
-    <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
-        <h2 class="text-xs font-bold text-brand-gold uppercase tracking-widest">Our Capabilities</h2>
-        <p class="text-3xl sm:text-4xl font-heading font-extrabold text-white uppercase">Site Work & Landscape Construction</p>
-        <p class="text-brand-muted text-sm sm:text-base">Heavy equipment and professional masonry built for lasting durability.</p>
-    </div>
-
-    <!-- Dynamic Services Grid Container -->
-    <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Populated via content.json -->
-    </div>
-</section>
-
-<!-- Before / After Gallery Slider -->
-<section id="projects" class="py-20 bg-brand-surface/30 border-y border-brand-surface px-4">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
-            <h2 class="text-xs font-bold text-brand-gold uppercase tracking-widest">Transformations</h2>
-            <p class="text-3xl sm:text-4xl font-heading font-extrabold text-white uppercase">Before & After Showcase</p>
-            <p class="text-brand-muted text-sm">Drag the handle to view site progress.</p>
-        </div>
-
-        <div class="max-w-4xl mx-auto">
-            <div id="ba-slider" class="ba-container aspect-video shadow-2xl border border-brand-surface">
-                <img src="https://images.unsplash.com/photo-1558904541-efa8c196b27d?auto=format&fit=crop&w=1200&q=80" alt="Before Site" class="w-full h-full object-cover">
-                <div class="absolute top-4 right-4 bg-brand-dark/80 text-white px-3 py-1 rounded text-xs font-bold uppercase">Before</div>
-
-                <div id="ba-after-layer" class="ba-after">
-                    <img src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&w=1200&q=80" alt="After Site" class="absolute top-0 left-0 max-w-none h-full object-cover" id="ba-after-img">
-                    <div class="absolute top-4 left-4 bg-brand-accent text-white px-3 py-1 rounded text-xs font-bold uppercase">After</div>
-                </div>
-
-                <div id="ba-handle" class="ba-handle">
-                    <div class="ba-handle-button">
-                        <i class="fa-solid fa-arrows-left-right text-xs"></i>
+                <div>
+                    <div id="brand-title" class="font-heading font-black text-lg md:text-xl tracking-tight text-white uppercase flex items-center gap-1">
+                        SEABREEZE <span class="text-brand-gold">.</span>
                     </div>
+                    <div id="brand-subtitle" class="text-[10px] sm:text-xs font-semibold tracking-wider text-brand-muted uppercase">Landscape Construction</div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Streamlined Estimate Form Section -->
-<section id="estimate" class="py-20 px-4 max-w-4xl mx-auto">
-    <div class="bg-brand-card border border-brand-gold/30 rounded-3xl p-6 sm:p-10 shadow-2xl">
-        <div class="text-center max-w-xl mx-auto mb-8 space-y-2">
-            <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-white uppercase">Request Your Free Estimate</h2>
-            <p class="text-brand-muted text-sm">Fast 4-field request form connected to our scheduling system.</p>
-        </div>
-
-        <form id="lead-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                    <label class="block text-xs font-bold uppercase text-brand-muted mb-1">Your Full Name *</label>
-                    <input type="text" required placeholder="John Smith" class="w-full bg-brand-surface border border-brand-surface rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold uppercase text-brand-muted mb-1">Phone Number *</label>
-                    <input type="tel" required placeholder="(401) 000-0000" class="w-full bg-brand-surface border border-brand-surface rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                    <label class="block text-xs font-bold uppercase text-brand-muted mb-1">RI Town / ZIP Code *</label>
-                    <input type="text" required placeholder="North Kingstown, RI" class="w-full bg-brand-surface border border-brand-surface rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold uppercase text-brand-muted mb-1">Service Needed *</label>
-                    <select required class="w-full bg-brand-surface border border-brand-surface rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
-                        <option value="">Select a service...</option>
-                        <option value="excavation">Site Work & Excavation</option>
-                        <option value="patio">Patio & Walkway Installation</option>
-                        <option value="retaining-wall">Retaining Wall Construction</option>
-                        <option value="drainage">Drainage Solution</option>
-                        <option value="clearing">Land Clearing</option>
-                        <option value="lawn">Lawn Renovation</option>
-                    </select>
-                </div>
-            </div>
-
-            <button type="submit" class="w-full bg-brand-accent hover:bg-brand-accentHover text-white py-4 rounded-xl font-extrabold text-base uppercase tracking-wider transition-all shadow-lg">
-                Submit Estimate Request
-            </button>
-        </form>
-
-        <div id="form-success" class="hidden text-center py-8 space-y-4">
-            <div class="w-16 h-16 bg-brand-accent/20 text-brand-accent rounded-full flex items-center justify-center text-3xl mx-auto">
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-white">Request Received!</h3>
-            <p class="text-brand-muted text-sm">We will review your project details and follow up shortly.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-brand-dark border-t border-brand-surface py-12 px-4 text-center text-xs text-brand-muted">
-    <div class="max-w-7xl mx-auto space-y-3">
-        <div class="font-heading font-black text-white text-sm uppercase">Seabreeze Landscape Construction</div>
-        <div>&copy; <span id="year"></span> All rights reserved. Serving Rhode Island.</div>
-    </div>
-</footer>
-
-<!-- Mobile Sticky Call Bar -->
-<div class="fixed bottom-0 left-0 right-0 z-50 bg-brand-dark/95 border-t border-brand-surface p-3 sm:hidden grid grid-cols-2 gap-3 backdrop-blur-lg">
-    <a id="sticky-phone-link" href="tel:4018292058" class="bg-brand-surface border border-brand-gold/40 text-brand-gold font-extrabold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
-        <i class="fa-solid fa-phone"></i> Call Now
-    </a>
-    <a id="sticky-sms-link" href="sms:4018292058" class="bg-brand-accent text-white font-extrabold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
-        <i class="fa-solid fa-comment"></i> Text Quote
-    </a>
-</div>
-
-<!-- Frontend JSON Loader & Interactive Script -->
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    document.getElementById('menu-toggle').addEventListener('click', () => {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-
-    // Load content dynamically from data/content.json
-    document.addEventListener('DOMContentLoaded', async () => {
-        try {
-            const response = await fetch('./data/content.json');
-            const data = await response.json();
+            </a>
             
-            // Populate Company info
-            document.getElementById('header-phone-text').textContent = data.company.phone;
-            document.getElementById('header-phone-link').href = `tel:${data.company.phoneClean}`;
-            document.getElementById('mobile-phone-text').textContent = `Call/Text ${data.company.phone}`;
-            document.getElementById('mobile-phone-link').href = `tel:${data.company.phoneClean}`;
-            document.getElementById('sticky-phone-link').href = `tel:${data.company.phoneClean}`;
-            document.getElementById('sticky-sms-link').href = `sms:${data.company.phoneClean}`;
-            document.getElementById('hero-text-link').href = `sms:${data.company.phoneClean}`;
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-brand-lightText">
+                <a href="#services" class="hover:text-brand-gold transition-colors">Services</a>
+                <a href="#projects" class="hover:text-brand-gold transition-colors">Before & After</a>
+                <a href="#why-us" class="hover:text-brand-gold transition-colors">Why Choose Us</a>
+                <a href="#estimate" class="hover:text-brand-gold transition-colors">Free Estimate</a>
+            </nav>
+            
+            <div class="hidden sm:flex items-center gap-3">
+                <a id="header-phone-link" href="tel:4018292058" class="flex items-center gap-2 bg-brand-surface hover:bg-brand-surface/80 border border-brand-gold/40 text-brand-gold px-4 py-2.5 rounded-lg font-bold text-sm transition-all shadow-sm">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    <span id="header-phone-text">(401) 829-2058</span>
+                </a>
+                <a href="#estimate" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-md">
+                    Get Free Quote
+                </a>
+            </div>
+            
+            <button id="menu-toggle" class="lg:hidden p-2 text-brand-lightText hover:text-brand-gold focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
 
-            // Populate Services Grid
-            const grid = document.getElementById('services-grid');
-            grid.innerHTML = data.services.map(service => `
-                <div class="bg-brand-card border border-brand-surface rounded-2xl p-6 hover:border-brand-gold/50 transition-all">
-                    <div class="w-14 h-14 rounded-xl bg-brand-surface border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-5">
-                        <i class="fa-solid ${service.icon}"></i>
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-card border-b border-brand-surface px-4 pt-2 pb-6 space-y-3">
+            <a href="#services" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Services</a>
+            <a href="#projects" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Before & After Showcase</a>
+            <a href="#why-us" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Why Choose Us</a>
+            <a href="#estimate" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Fast Estimate Form</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a id="mobile-phone-link" href="tel:4018292058" class="flex items-center justify-center gap-2 bg-brand-surface text-brand-gold border border-brand-gold/40 py-3 rounded-lg font-bold text-center">
+                    <i class="fa-solid fa-phone"></i> <span id="mobile-phone-text">Call/Text (401) 829-2058</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[580px] md:min-h-[640px] flex items-center justify-center bg-cover bg-center py-20 px-4" style="background-image: linear-gradient(to bottom, rgba(17, 24, 32, 0.85), rgba(17, 24, 32, 0.95)), url('https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=1600&q=80');">
+        <div class="max-w-5xl mx-auto text-center space-y-6 relative z-10">
+            <div id="hero-badge" class="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 text-brand-gold px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-map-pin"></i> Serving All of Rhode Island & Surrounding Areas
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight uppercase">
+                From Site Works to <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-200">Finished Landscapes</span>
+            </h1>
+            
+            <p class="text-base sm:text-lg md:text-xl text-brand-muted max-w-3xl mx-auto font-normal leading-relaxed">
+                Specializing in excavation, paver patios, retaining walls, land clearing, and comprehensive drainage solutions across Rhode Island.
+            </p>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none">
+                <a href="#estimate" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-xl font-bold text-base transition-all shadow-lg flex items-center justify-center gap-3 group">
+                    <span>Request Free Fast Estimate</span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a id="hero-text-link" href="sms:4018292058" class="w-full sm:w-auto bg-brand-surface hover:bg-brand-surface/80 border border-slate-600 text-white px-8 py-4 rounded-xl font-bold text-base transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-comment-dots text-brand-gold"></i>
+                    <span>Text Us for Quick Quote</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+            <h2 class="text-xs font-bold text-brand-gold uppercase tracking-widest">Our Capabilities</h2>
+            <p class="text-3xl sm:text-4xl font-heading font-extrabold text-white uppercase">Site Work & Landscape Construction</p>
+            <p class="text-brand-muted text-sm sm:text-base">Heavy equipment and professional masonry built for lasting durability.</p>
+        </div>
+
+        <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Populated dynamically via content.json -->
+        </div>
+    </section>
+
+    <!-- Before / After Gallery Slider -->
+    <section id="projects" class="py-20 bg-brand-surface/30 border-y border-brand-surface px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                <h2 class="text-xs font-bold text-brand-gold uppercase tracking-widest">Transformations</h2>
+                <p class="text-3xl sm:text-4xl font-heading font-extrabold text-white uppercase">Before & After Showcase</p>
+                <p class="text-brand-muted text-sm">Drag the handle to view site progress.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div id="ba-slider" class="ba-container aspect-video shadow-2xl border border-brand-surface relative overflow-hidden rounded-xl select-none">
+                    <img src="https://images.unsplash.com/photo-1558904541-efa8c196b27d?auto=format&fit=crop&w=1200&q=80" alt="Before Site" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-brand-dark/80 text-white px-3 py-1 rounded text-xs font-bold uppercase">Before</div>
+
+                    <div id="ba-after-layer" class="ba-after absolute top-0 bottom-0 left-0 w-1/2 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&w=1200&q=80" alt="After Site" class="absolute top-0 left-0 max-w-none h-full object-cover" id="ba-after-img">
+                        <div class="absolute top-4 left-4 bg-brand-accent text-white px-3 py-1 rounded text-xs font-bold uppercase">After</div>
                     </div>
-                    <h3 class="text-xl font-heading font-bold text-white mb-2">${service.title}</h3>
-                    <p class="text-brand-muted text-sm leading-relaxed mb-4">${service.description}</p>
+
+                    <div id="ba-handle" class="ba-handle absolute top-0 bottom-0 left-1/2 w-1 bg-brand-gold cursor-ew-resize -translate-x-1/2 z-20">
+                        <div class="ba-handle-button absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-arrows-left-right text-xs"></i>
+                        </div>
+                    </div>
                 </div>
-            `).join('');
+            </div>
+        </div>
+    </section>
 
-        } catch (err) {
-            console.error("Could not load content.json:", err);
+    <!-- Streamlined Estimate Form Section -->
+    <section id="estimate" class="py-20 px-4 max-w-4xl mx-auto">
+        <div class="bg-brand-card border border-brand-gold/30 rounded-3xl p-6 sm:p-10 shadow-2xl">
+            <div class="text-center max-w-xl mx-auto mb-8 space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-white uppercase">Request Your Free Estimate</h2>
+                <p class="text-brand-muted text-sm">Fast 4-field request form connected to our scheduling system.</p>
+            </div>
+
+            <form id="lead-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-brand-muted mb-1">Your Full Name *</label>
+                        <input type="text" required placeholder="John Smith" class="w-full bg-brand-surface border border-brand-surface rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-brand-muted mb-1">Phone Number *</label>
+                        <input type="tel" required placeholder="(401) 000-0000" class="w-full bg-brand-surface border border-brand-surface rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-brand-muted mb-1">RI Town / ZIP Code *</label>
+                        <input type="text" required placeholder="North Kingstown, RI" class="w-full bg-brand-surface border border-brand-surface rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-brand-muted mb-1">Service Needed *</label>
+                        <select required class="w-full bg-brand-surface border border-brand-surface rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
+                            <option value="">Select a service...</option>
+                            <option value="excavation">Site Work & Excavation</option>
+                            <option value="patio">Patio & Walkway Installation</option>
+                            <option value="retaining-wall">Retaining Wall Construction</option>
+                            <option value="drainage">Drainage Solution</option>
+                            <option value="clearing">Land Clearing</option>
+                            <option value="lawn">Lawn Renovation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-brand-accent hover:bg-brand-accentHover text-white py-4 rounded-xl font-extrabold text-base uppercase tracking-wider transition-all shadow-lg">
+                    Submit Estimate Request
+                </button>
+            </form>
+
+            <div id="form-success" class="hidden text-center py-8 space-y-4">
+                <div class="w-16 h-16 bg-brand-accent/20 text-brand-accent rounded-full flex items-center justify-center text-3xl mx-auto">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white">Request Received!</h3>
+                <p class="text-brand-muted text-sm">We will review your project details and follow up shortly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-brand-surface py-12 px-4 text-center text-xs text-brand-muted">
+        <div class="max-w-7xl mx-auto space-y-3">
+            <div class="font-heading font-black text-white text-sm uppercase">Seabreeze Landscape Construction</div>
+            <div>&copy; <span id="year"></span> All rights reserved. Serving Rhode Island.</div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Call Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-brand-dark/95 border-t border-brand-surface p-3 sm:hidden grid grid-cols-2 gap-3 backdrop-blur-lg">
+        <a id="sticky-phone-link" href="tel:4018292058" class="bg-brand-surface border border-brand-gold/40 text-brand-gold font-extrabold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+        <a id="sticky-sms-link" href="sms:4018292058" class="bg-brand-accent text-white font-extrabold py-3 rounded-xl text-xs flex items-center justify-center gap-2">
+            <i class="fa-solid fa-comment"></i> Text Quote
+        </a>
+    </div>
+
+    <!-- Frontend JSON Loader & Interactive Script -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Load content dynamically from data/content.json
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('./data/content.json');
+                const data = await response.json();
+                
+                // Populate Company info
+                document.getElementById('header-phone-text').textContent = data.company.phone;
+                document.getElementById('header-phone-link').href = `tel:${data.company.phoneClean}`;
+                document.getElementById('mobile-phone-text').textContent = `Call/Text ${data.company.phone}`;
+                document.getElementById('mobile-phone-link').href = `tel:${data.company.phoneClean}`;
+                document.getElementById('sticky-phone-link').href = `tel:${data.company.phoneClean}`;
+                document.getElementById('sticky-sms-link').href = `sms:${data.company.phoneClean}`;
+                document.getElementById('hero-text-link').href = `sms:${data.company.phoneClean}`;
+
+                // Populate Services Grid
+                const grid = document.getElementById('services-grid');
+                grid.innerHTML = data.services.map(service => `
+                    <div class="bg-brand-card border border-brand-surface rounded-2xl p-6 hover:border-brand-gold/50 transition-all">
+                        <div class="w-14 h-14 rounded-xl bg-brand-surface border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-5">
+                            <i class="fa-solid ${service.icon}"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">${service.title}</h3>
+                        <p class="text-brand-muted text-sm leading-relaxed mb-4">${service.description}</p>
+                    </div>
+                `).join('');
+
+            } catch (err) {
+                console.error("Could not load content.json:", err);
+            }
+        });
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('lead-form').classList.add('hidden');
+            document.getElementById('form-success').classList.remove('hidden');
         }
-    });
 
-    function handleFormSubmit(e) {
-        e.preventDefault();
-        document.getElementById('lead-form').classList.add('hidden');
-        document.getElementById('form-success').classList.remove('hidden');
-    }
+        // Before / After Slider Logic
+        const slider = document.getElementById('ba-slider');
+        const afterLayer = document.getElementById('ba-after-layer');
+        const handle = document.getElementById('ba-handle');
+        const afterImg = document.getElementById('ba-after-img');
+        let isDragging = false;
 
-    // Before / After Slider Logic
-    const slider = document.getElementById('ba-slider');
-    const afterLayer = document.getElementById('ba-after-layer');
-    const handle = document.getElementById('ba-handle');
-    const afterImg = document.getElementById('ba-after-img');
-    let isDragging = false;
+        function updateSlider(x) {
+            const rect = slider.getBoundingClientRect();
+            let pos = x - rect.left;
+            if (pos < 0) pos = 0;
+            if (pos > rect.width) pos = rect.width;
+            const pct = (pos / rect.width) * 100;
+            afterLayer.style.width = pct + '%';
+            handle.style.left = pct + '%';
+            afterImg.style.width = rect.width + 'px';
+        }
 
-    function updateSlider(x) {
-        const rect = slider.getBoundingClientRect();
-        let pos = x - rect.left;
-        if (pos < 0) pos = 0;
-        if (pos > rect.width) pos = rect.width;
-        const pct = (pos / rect.width) * 100;
-        afterLayer.style.width = pct + '%';
-        handle.style.left = pct + '%';
-        afterImg.style.width = rect.width + 'px';
-    }
+        window.addEventListener('load', () => { afterImg.style.width = slider.getBoundingClientRect().width + 'px'; });
+        window.addEventListener('resize', () => { afterImg.style.width = slider.getBoundingClientRect().width + 'px'; });
 
-    window.addEventListener('load', () => { afterImg.style.width = slider.getBoundingClientRect().width + 'px'; });
-    window.addEventListener('resize', () => { afterImg.style.width = slider.getBoundingClientRect().width + 'px'; });
-
-    slider.addEventListener('mousedown', (e) => { isDragging = true; updateSlider(e.clientX); });
-    window.addEventListener('mouseup', () => { isDragging = false; });
-    window.addEventListener('mousemove', (e) => { if (isDragging) updateSlider(e.clientX); });
-    slider.addEventListener('touchstart', (e) => { isDragging = true; updateSlider(e.touches[0].clientX); });
-    window.addEventListener('touchend', () => { isDragging = false; });
-    window.addEventListener('touchmove', (e) => { if (isDragging) updateSlider(e.touches[0].clientX); });
-</script>
-
+        slider.addEventListener('mousedown', (e) => { isDragging = true; updateSlider(e.clientX); });
+        window.addEventListener('mouseup', () => { isDragging = false; });
+        window.addEventListener('mousemove', (e) => { if (isDragging) updateSlider(e.clientX); });
+        slider.addEventListener('touchstart', (e) => { isDragging = true; updateSlider(e.touches[0].clientX); });
+        window.addEventListener('touchend', () => { isDragging = false; });
+        window.addEventListener('touchmove', (e) => { if (isDragging) updateSlider(e.touches[0].clientX); });
+    </script>
+</body>
+</html>
