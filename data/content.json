@@ -74,3 +74,50 @@
     }
   ]
 }
+{
+"company": {
+"name": "Seabreeze Landscape Construction",
+"tagline": "From Site Works to Finished Landscapes",
+"phone": "(401) 829-2058",
+"phoneClean": "4018292058",
+"location": "Rhode Island"
+},
+"services": [
+{
+"id": "excavation",
+"icon": "fa-tractor",
+"title": "Site Work & Excavation",
+"description": "Precision grading, trenching, foundation prep, and lot clearing using commercial machinery."
+},
+{
+"id": "patio",
+"icon": "fa-cubes",
+"title": "Patios & Walkways",
+"description": "Custom paver patio installations, natural stone walkways, and stunning outdoor living spaces."
+},
+{
+"id": "retaining-wall",
+"icon": "fa-layer-group",
+"title": "Retaining Walls",
+"description": "Engineered block walls and structural boulder retaining structures built for erosion control."
+},
+{
+"id": "drainage",
+"icon": "fa-water",
+"title": "Drainage Solutions",
+"description": "French drains, dry wells, and positive slope grading to protect foundations from standing water."
+},
+{
+"id": "clearing",
+"icon": "fa-tree",
+"title": "Land Clearing",
+"description": "Overgrown brush removal, stump grinding, and gravel driveway installation."
+},
+{
+"id": "lawn",
+"icon": "fa-seedling",
+"title": "Lawn Renovations",
+"description": "Hydroseeding, fresh sod installation, and professional landscape grading."
+}
+]
+}
