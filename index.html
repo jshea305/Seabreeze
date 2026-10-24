@@ -53,38 +53,40 @@
 
     <!-- Header Navigation -->
    <!-- Header Navigation -->
-    <header class="sticky top-0 z-40 bg-cover bg-center border-b border-brand-surface/80 relative" style="background-image: linear-gradient(to right, rgba(17, 24, 32, 0.92), rgba(17, 24, 32, 0.85)), url('images/SB-1.png');">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative z-10">
+   <!-- Header Navigation with Brighter & Taller Background Banner -->
+    <header class="sticky top-0 z-40 bg-cover bg-center border-b border-brand-surface/80 relative shadow-2xl transition-all" style="background-image: linear-gradient(to right, rgba(17, 24, 32, 0.55), rgba(17, 24, 32, 0.40)), url('images/SB-1.png');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-28 md:h-32 flex items-center justify-between relative z-10">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="bg-brand-surface p-2.5 rounded-lg border border-brand-gold/30 group-hover:border-brand-gold transition-all">
+                <div class="bg-brand-surface/90 backdrop-blur-sm p-3 rounded-xl border border-brand-gold/40 group-hover:border-brand-gold transition-all shadow-lg">
                     <i class="fa-solid font-black fa-dumpster-fire text-brand-gold text-2xl"></i>
                 </div>
                 <div>
-                    <div id="brand-title" class="font-heading font-black text-lg md:text-xl tracking-tight text-white uppercase flex items-center gap-1">
+                    <div id="brand-title" class="font-heading font-black text-xl md:text-2xl tracking-tight text-white uppercase flex items-center gap-1 drop-shadow-md">
                         SEABREEZE <span class="text-brand-gold">.</span>
                     </div>
-                    <div id="brand-subtitle" class="text-[10px] sm:text-xs font-semibold tracking-wider text-brand-muted uppercase">Landscape Construction</div>
+                    <div id="brand-subtitle" class="text-[10px] sm:text-xs font-bold tracking-wider text-brand-gold uppercase drop-shadow-sm">Landscape Construction</div>
                 </div>
             </a>
             
-            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-brand-lightText">
+            <nav class="hidden lg:flex items-center gap-8 font-semibold text-sm text-white drop-shadow-md">
                 <a href="#services" class="hover:text-brand-gold transition-colors">Services</a>
                 <a href="#projects" class="hover:text-brand-gold transition-colors">Before & After</a>
                 <a href="#why-us" class="hover:text-brand-gold transition-colors">Why Choose Us</a>
+                <a href="reviews.html" class="hover:text-brand-gold transition-colors">Reviews</a>
                 <a href="#estimate" class="hover:text-brand-gold transition-colors">Free Estimate</a>
             </nav>
             
             <div class="hidden sm:flex items-center gap-3">
-                <a id="header-phone-link" href="tel:4018292058" class="flex items-center gap-2 bg-brand-surface/90 hover:bg-brand-surface border border-brand-gold/40 text-brand-gold px-4 py-2.5 rounded-lg font-bold text-sm transition-all shadow-sm">
+                <a id="header-phone-link" href="tel:4018292058" class="flex items-center gap-2 bg-brand-surface/90 hover:bg-brand-surface border border-brand-gold/50 text-brand-gold px-4 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg backdrop-blur-sm">
                     <i class="fa-solid fa-phone text-xs"></i>
                     <span id="header-phone-text">(401) 829-2058</span>
                 </a>
-                <a href="#estimate" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-md">
+                <a href="#estimate" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg border border-emerald-500/30">
                     Get Free Quote
                 </a>
             </div>
             
-            <button id="menu-toggle" class="lg:hidden p-2 text-brand-lightText hover:text-brand-gold focus:outline-none">
+            <button id="menu-toggle" class="lg:hidden p-2 text-white hover:text-brand-gold focus:outline-none drop-shadow">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
@@ -93,6 +95,7 @@
             <a href="#services" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Services</a>
             <a href="#projects" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Before & After Showcase</a>
             <a href="#why-us" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Why Choose Us</a>
+            <a href="reviews.html" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Customer Reviews</a>
             <a href="#estimate" class="block py-2 text-brand-lightText hover:text-brand-gold font-medium border-b border-brand-surface/50">Fast Estimate Form</a>
             <div class="pt-2 flex flex-col gap-2">
                 <a id="mobile-phone-link" href="tel:4018292058" class="flex items-center justify-center gap-2 bg-brand-surface text-brand-gold border border-brand-gold/40 py-3 rounded-lg font-bold text-center">
